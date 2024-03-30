@@ -19,6 +19,7 @@ namespace Excel
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+
                 string excelYolu = openFileDialog.FileName;
                
                 OleDbConnection baglanti = new OleDbConnection($@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={excelYolu};Extended Properties='Excel 12.0 Xml;HDR=YES'");
